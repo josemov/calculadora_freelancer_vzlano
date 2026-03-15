@@ -144,7 +144,7 @@ export default function OGImage() {
 
         {/* URL */}
         <p style={{ position: "absolute", bottom: 28, fontSize: 16, color: "#4b5563" }}>
-          calculadora-freelance.vercel.app
+          calculadorafreelancevzlano.vercel.app
         </p>
       </div>
     ),
