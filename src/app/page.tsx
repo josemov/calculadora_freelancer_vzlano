@@ -46,14 +46,27 @@ const PLATFORMS: PlatformFee[] = [
     ),
   },
   {
-    name: "Wise",
-    percentFee: 1.5,
+    name: "Zinli",
+    percentFee: 2.9,
     fixedFee: 0.3,
-    description: "Comisión promedio para transferencias internacionales",
-    color: "green",
+    description: "Billetera digital popular en Venezuela y Latinoamérica",
+    color: "violet",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+        <path d="M8 14.5l8-5M8 9.5h8" />
+      </svg>
+    ),
+  },
+  {
+    name: "Binance Pay",
+    percentFee: 0,
+    fixedFee: 0,
+    description: "Sin comisión entre usuarios Binance. Tasa de conversión puede aplicar.",
+    color: "yellow",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 2L8.5 5.5 12 9l3.5-3.5L12 2zM5.5 8.5L2 12l3.5 3.5L9 12 5.5 8.5zM18.5 8.5L15 12l3.5 3.5L22 12l-3.5-3.5zM8.5 18.5L12 22l3.5-3.5L12 15l-3.5 3.5zM12 9l-3 3 3 3 3-3-3-3z" />
       </svg>
     ),
   },
@@ -460,12 +473,19 @@ export default function Home() {
                     badge: "bg-orange-500/10 text-orange-400 border-orange-500/20",
                     accent: "from-orange-500/10 to-orange-600/5",
                   },
-                  green: {
-                    border: "border-emerald-500/30",
-                    bg: "bg-emerald-500/5",
-                    text: "text-emerald-400",
-                    badge: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-                    accent: "from-emerald-500/10 to-emerald-600/5",
+                  violet: {
+                    border: "border-violet-500/30",
+                    bg: "bg-violet-500/5",
+                    text: "text-violet-400",
+                    badge: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+                    accent: "from-violet-500/10 to-violet-600/5",
+                  },
+                  yellow: {
+                    border: "border-yellow-500/30",
+                    bg: "bg-yellow-500/5",
+                    text: "text-yellow-400",
+                    badge: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+                    accent: "from-yellow-500/10 to-yellow-600/5",
                   },
                 };
 
