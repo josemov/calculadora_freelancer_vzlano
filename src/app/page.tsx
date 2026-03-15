@@ -70,6 +70,20 @@ const PLATFORMS: PlatformFee[] = [
       </svg>
     ),
   },
+  {
+    name: "Wise",
+    percentFee: 1.5,
+    fixedFee: 0.3,
+    description: "Comisión promedio para transferencias internacionales en USD",
+    color: "green",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
+      </svg>
+    ),
+  },
 ];
 
 function calcGrossForNet(net: number, percentFee: number, fixedFee: number): number {
@@ -479,6 +493,13 @@ export default function Home() {
                     text: "text-violet-400",
                     badge: "bg-violet-500/10 text-violet-400 border-violet-500/20",
                     accent: "from-violet-500/10 to-violet-600/5",
+                  },
+                  green: {
+                    border: "border-emerald-500/30",
+                    bg: "bg-emerald-500/5",
+                    text: "text-emerald-400",
+                    badge: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+                    accent: "from-emerald-500/10 to-emerald-600/5",
                   },
                   yellow: {
                     border: "border-yellow-500/30",
